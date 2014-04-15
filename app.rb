@@ -5,7 +5,11 @@ get "/error" do
 end
 
 get "/" do 
-	"Hello!"
+	erb :"fav_things/index"
+end
+
+get "/index" do
+	erb :"fav_things/index"
 end
 
 get "/new" do

@@ -5,19 +5,9 @@
 </head>
 <body>
 
-<h1>
-Who are your favorite authors?
-</h1>
 
-<ul>
-	<% @fav_things.each do |fav_thing| %>
-	<li><%= fav_thing %></li>
-	<% end %>
-</ul>
-<form action = "/fav_things" method="post">
-	<input type = "text" id="description" name="description">
-	<input type = "submit">
-</form>
+<div class = "top-bar"></div>
+<a href="new" class="index-button">Click here!</a>
 
 </body>
 </html>
