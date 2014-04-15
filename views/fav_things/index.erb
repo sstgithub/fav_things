@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Favorite ...</title>
+	<link rel="stylesheet" type="text/css" href="/application.css">
+</head>
+<body>
+
+<h1>
+What Are Your Favorite ...?
+</h1>
+
+<ul>
+	<% @fav_things.each do |fav_thing| %>
+	<li><%= fav_thing %></li>
+	<% end %>
+</ul>
+<form action = "/fav_things" method="post">
+	<input type = "text" id="description" name="description">
+	<input type = "submit">
+</form>
+
+</body>
+</html>
