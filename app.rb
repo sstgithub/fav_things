@@ -38,7 +38,7 @@ class FavThing
 	end
 
 	def self.add_fav_thing(fav_thing)
-		if fav_thing == "I don't read"
+		if fav_thing == "I never read"
 			return false
 		else
 			@@fav_things.push(fav_thing)
@@ -47,5 +47,3 @@ class FavThing
 	end
 
 end
-
-# RACK_ENV=production rackup config.ru # puts it into production environment for Sinatra
