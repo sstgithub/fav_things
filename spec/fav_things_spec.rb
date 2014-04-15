@@ -1,16 +1,16 @@
 require 'rspec'
 require './app.rb'
 
-describe ToDo do
-	it 'should have to-dos' do
-		ToDo.to_dos.should_not be_empty
+describe FavThing do
+	it 'should have fav-things' do
+		FavThing.fav_things.should_not be_empty
 	end
 
 	it 'should add a to-do' do
-		first_count = ToDo.to_dos.count
-		to_do = "Brush teeth"
-		ToDo.add_to_do(to_do)
-		second_count = ToDo.to_dos.count
+		first_count = FavThing.fav_things.count
+		fav_thing = "Brush teeth"
+		FavThing.add_fav_thing(fav_thing)
+		second_count = FavThing.fav_things.count
 
 		second_count.should > first_count
 	end

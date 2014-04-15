@@ -24,7 +24,7 @@ end
 
 
 class FavThing
-	@@fav_things = ["item 1", "item 2","item 3"]
+	@@fav_things = ["Terry Pratchett", "Kurt Vonnegut","Neil Gaiman", "JK Rowling", "JRR Tolkien"]
 
 	def initialize
 	end
@@ -34,7 +34,7 @@ class FavThing
 	end
 
 	def self.add_to_do(fav_thing)
-		if fav_thing == "wrong item"
+		if fav_thing == "I don't read"
 			return false
 		else
 			@@fav_things.push(fav_thing)
