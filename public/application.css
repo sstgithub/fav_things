@@ -1,5 +1,6 @@
 ul {
 	color: blue;
+	margin-left: 33%;
 }
 
 
@@ -30,6 +31,37 @@ body {
 	font-size: 30;
 }
 
+#left {
+    width:50%;
+    height:100%;
+    float:left;
+    background:#F2F0EC;/*
+    background:rgb(208,205,199);*/
+}
+
+#right {
+    width:50%;
+    height:100%;
+    float:right;
+    background:#F2F0EC;/*
+    background:rgb(208,205,199);*/
+}
+
+.divider{
+    position:absolute;
+    left:50%;
+    top:5%;
+    bottom:5%;
+    border-left:3px solid black;
+}
+
+#blue_box {
+    position: relative;
+    background:#F2F0EC;
+    width:100%;
+    height:100%;
+    padding:10px;
+}
 
 .index-button {
 	-moz-box-shadow:inset 0px 1px 0px 0px #f9eca0;
@@ -76,4 +108,61 @@ body {
 }.index-button:active {
 	position:relative;
 	top:1px;
+}
+
+
+.second-button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background-color:#3d94f6;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:31px;
+	font-weight:bold;
+	font-style:normal;
+	height:67px;
+	line-height:67px;
+	width:300px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+	margin-left: 33%;
+	margin-top: 1%;
+}
+.second-button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+	background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+	background-color:#1e62d0;
+}.second-button:active {
+	position:relative;
+	top:1px;
+}
+
+
+.input-text {
+	height: 50px;
+	width: 300px;
+	margin-left: 33%;
+	margin-top: 2%;
+	font-size: 25;
 }

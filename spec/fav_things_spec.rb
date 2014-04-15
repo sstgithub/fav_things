@@ -6,9 +6,9 @@ describe FavThing do
 		FavThing.fav_things.should_not be_empty
 	end
 
-	it 'should add a to-do' do
+	it 'should add an author' do
 		first_count = FavThing.fav_things.count
-		fav_thing = "Brush teeth"
+		fav_thing = "boogabooga"
 		FavThing.add_fav_thing(fav_thing)
 		second_count = FavThing.fav_things.count
 

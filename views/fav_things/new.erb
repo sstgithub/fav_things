@@ -11,19 +11,31 @@
 Who are your favorite authors?
 </font></div>
 
-<!-- <div id="left"></div>
-<div class="divider"></div>
-<div id="right"></div> -->
+<div id="blue_box">
+
+<div id="left">
 
 <ul>
 	<% @fav_things.each do |fav_thing| %>
 	<li><%= fav_thing %></li>
 	<% end %>
 </ul>
+
+</div>
+
+
+<div class="divider"></div>
+
+
+<div id="right">
 <form action = "/new" method="post">
-	<input type = "text" id="description" name="description">
-	<input type = "submit">
+	<input type = "text" id="description" name="description" class = "input-text"><p></p>
+	<input type = "submit" class = "second-button">
 </form>
+</div>
+</div>
+
+
 
 </body>
 </html>

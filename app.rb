@@ -19,7 +19,7 @@ end
 
 post "/new" do
 	text = params[:description]
-	if FavThing.add_to_do(text)
+	if FavThing.add_fav_thing(text)
 		redirect "/new"
 	else
 		redirect "/error"
@@ -37,7 +37,7 @@ class FavThing
 		@@fav_things
 	end
 
-	def self.add_to_do(fav_thing)
+	def self.add_fav_thing(fav_thing)
 		if fav_thing == "I don't read"
 			return false
 		else
