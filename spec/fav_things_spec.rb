@@ -16,16 +16,12 @@ describe FavThing do
 	end
 
 	it 'should not add invalid input' do
-		# fav_thing = "I don't read"
-		# FavThing.add_fav_thing(fav_thing)
-		# FavThing.add_fav_thing(fav_thing).should eq(false)
-
 		first_count = FavThing.fav_things.count
 		fav_thing = "I never read"
 		FavThing.add_fav_thing(fav_thing)
 		second_count = FavThing.fav_things.count
 
-		second_count.should > first_count
+		second_count.should == first_count
 	end
 
 end
