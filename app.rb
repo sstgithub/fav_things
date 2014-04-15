@@ -1,24 +1,24 @@
 require 'sinatra'
 
-get "/Error" do
-	"Error"
+get "/error" do
+	erb :"fav_things/error"
 end
 
 get "/" do 
 	"Hello!"
 end
 
-get "/fav_things" do
+get "/new" do
 	@fav_things = FavThing.fav_things
-	erb :"fav_things/index"
+	erb :"fav_things/new"
 end
 
-post "/fav_things" do
+post "/new" do
 	text = params[:description]
 	if FavThing.add_to_do(text)
-		redirect "/fav_things"
+		redirect "/new"
 	else
-		redirect "/Error"
+		redirect "/error"
 	end
 end
 
