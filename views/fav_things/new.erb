@@ -17,7 +17,9 @@ Who are your favorite authors?
 
 <ul>
 	<% @fav_things.each do |fav_thing| %>
-	<li><%= fav_thing %></li>
+	<li><%= fav_thing.author_name %>
+	<a href = "/fav_things/<%= fav_thing.id %>">DELETE?</a>
+	<a href = "/fav_things/<%= fav_thing.id %>/edit">EDIT?</a></li>
 	<% end %>
 </ul>
 
@@ -30,7 +32,7 @@ Who are your favorite authors?
 <div id="right">
 <form action = "/new" method="post">
 	<input type = "text" id="description" name="description" class = "input-text"><p></p>
-	<input type = "submit" class = "second-button">
+	<input type = "submit" class = "second-button margins">
 </form>
 </div>
 </div>

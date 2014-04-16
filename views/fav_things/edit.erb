@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Edit</title>
+	<link rel="stylesheet" type="text/css" href="/application.css">
+</head>
+<body>
+
+<div class = "top-bar"></div>
+
+<div class = "black-bar"><font class = "new-h1">
+Correct your Author's Name and click Submit
+</font></div>
+
+<form action="/fav_things/<%= @fav_thing.id %>" method="post">
+		<input type="hidden" name="_method" value="put" /> 
+		<input type="text" id="fav_thing_author_name" name="fav_thing[author_name]" value="<%= @fav_thing.author_name %>">
+		<input type="submit" class = "second-button" margin-left = "10%" margin-top = "10%">
+</form>
+
+</body>
+</html>
+
+

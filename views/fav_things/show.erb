@@ -1,0 +1,10 @@
+<% if @fav_thing %>
+  <p>Are you sure you want to delete the following name: <em>"<%= @fav_thing.author_name %>"</em>?</p>
+  <form action="/fav_things/<%= @fav_thing.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Yes, Delete It!">
+    <a href="/fav_things/new">Cancel</a>
+  </form>
+<% else %>
+  <p>Author name not found.</p>
+<% end %>
