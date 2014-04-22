@@ -5,9 +5,40 @@
 </head>
 <body>
 
-
 <div class = "top-bar"></div>
-<a href="fav_things/new" class="index-button">Click here!</a>
+
+<div class = "black-bar"><font class = "new-h1">
+Who are your favorite authors?
+</font></div>
+
+<div id="blue_box">
+
+<div id="left">
+
+<ul>
+	<% @fav_things.each do |fav_thing| %>
+	
+	<li><%= fav_thing.author_name %>
+	<a href = "/fav_things/<%= fav_thing.id %>">DELETE?</a>
+	<a href = "/fav_things/<%= fav_thing.id %>/edit">EDIT?</a>
+	</li>
+	<% end %>
+</ul>
+
+</div>
+
+
+<div class="divider"></div>
+
+
+<div id="right">
+
+	<div class = "margins"><a href = "/fav_things/new"><h2>Click here to add a new author!</h2></a></div>
+	<p></p>
+</div>
+</div>
+
+
 
 </body>
 </html>
